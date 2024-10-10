@@ -6,13 +6,13 @@ body {
     flex-direction: column;
     align-items: center;
     min-height: 100vh;
-    background-color: #f2e6ff; /* Lys lilla baggrund */
-    color: #333;
+    background-color: #202223; /* Grå baggrund */
+    color: #c8c3bc;
 }
 
 .navigationsbar {
     width: 100%;
-    background-color: #ffffff;
+    background-color: #181a1b;
     padding: 10px 0;
     text-align: center;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -35,7 +35,7 @@ body {
 }
 .container { 
     max-width: 600px;
-    background: white;
+    background: #181a1b;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
