@@ -1,10 +1,10 @@
 document.getElementById("passwordForm").addEventListener("submit", function(event) {
-    event.preventDefault();  // Forhindrer formularen i at genindlæse siden
+    event.preventDefault();  // Forhindrer siden i at genindlæse
     checkPassword();
 });
 
 function checkPassword() {
-    const passwords = ["john", "informatik"];  // Angiv dine to adgangskoder her
+    const passwords = ["john", "informatik"];  // Skriv dine adgangskoder her
     const input = document.getElementById("passwordInput").value;
     const message = document.getElementById("message");
 
