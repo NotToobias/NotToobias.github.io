@@ -9,7 +9,7 @@ function checkPassword() {
     const message = document.getElementById("message");
 
     if (passwords.includes(input)) {
-        window.location.href = "blaa_bog.html";  // Skift til din hovedside
+        window.location.href = "forside.html";  // Skift til din hovedside
     } else {
         message.textContent = "Forkert kode. Prøv igen.";
         message.style.color = "red";
