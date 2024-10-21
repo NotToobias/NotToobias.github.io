@@ -4,7 +4,7 @@ document.getElementById("passwordForm").addEventListener("submit", function(even
 });
 
 function checkPassword() {
-    const passwords = ["john", "informatik"];  // Skriv dine adgangskoder her
+    const passwords = ["john", "informatik", "kode"];  // Skriv dine adgangskoder her
     const input = document.getElementById("passwordInput").value;
     const message = document.getElementById("message");
 
