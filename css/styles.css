@@ -70,3 +70,32 @@ body {
 .links a:hover {
     text-decoration: underline;
 }
+
+.countdown-container {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+h2 {
+    font-size: 24px;
+    color: #c8c3bc;
+    margin-bottom: 20px;
+}
+
+.countdown-box {
+    display: inline-block;
+    text-align: center;
+    margin: 0 15px; /*  */
+}
+
+.number {
+    display: block;
+    font-size: 48px; /* Stor font til tekst */
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.label {
+    font-size: 16px; /* Mindre font til labels (Dage, Timer etc.) */
+    color: #c8c3bc;
+}
