@@ -1,37 +1,26 @@
 <!DOCTYPE html>
 <html>
 <head>
-<script type="text/javascript">
-var now = new Date();
-var event = new Date("Sep 20 2021 15:30:00");
-var seconds = (now - event) / 1000;
-var minutes = seconds / 60;
-var hours = minutes / 60;
-var days = hours / 24;
-var ID=window.setInterval(function() {update(), 1000});
-function update()
-{
-now = new Date();
-seconds = (event - now) / 1000;
-seconds = Math.round(seconds);
-minutes = seconds / 60;
-minutes = Math.round(minutes);
-hours = minutes / 60;
-hours = Math.round(hours);
-days = hours / 24;
-days = Math.round(days);
-document.getElementById('days').value = days;
-document.getElementById('hours').value = hours;
-document.getElementById('minutes').value = minutes;
-document.getElementById('seconds').value = seconds;
-}
-</script>
+
 </head>
 <body>
-<h1>Nedt&aelig;lling til vi skal hjem</h1>
-<p id="cnt">Der er <input type="text" id="days" value="0" style="width:40px;" /> dage eller
-<input type="text" id="hours" value="0" style="width:70px;"/>timer eller
-<input type="text" id="minutes" value="0" style="width:70px;"/> minutter, eller
-<input type="text" id="seconds" value="0" style="width:70px;"/> sekunder til vi skal hjem</p>
+    <div class="countdown-container">
+        <div class="countdown-box">
+            <span class="number">00</span>
+            <span class="label">days</span>
+        </div>
+        <div class="countdown-box">
+            <span class="number">23</span>
+            <span class="label">hrs</span>
+        </div>
+        <div class="countdown-box">
+            <span class="number">23</span>
+            <span class="label">min</span>
+        </div>
+        <div class="countdown-box">
+            <span class="number">13</span>
+            <span class="label">sec</span>
+        </div>
+    </div>
 </body>
 </html>
