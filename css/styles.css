@@ -18,6 +18,7 @@ body {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
 }
+
 .navigationsbar ul {
     list-style-type: none;
     padding: 0;
@@ -25,14 +26,34 @@ body {
     display: inline-flex;
     gap: 20px;
 }
+
 .navigationsbar li {
     display: inline;
 }
+
 .navigationsbar a {
     color: #7a00cc;
     text-decoration: none;
     font-weight: bold;
+    padding: 10px 15px; /* Indvendig padding i link */
+    line-height: 1.5; /* Ensartet linjehøjde for alle links */
+    height: 40px; /* Fast højde for at undgå overlapning */
+    display: flex;
+    align-items: center; /* Centrér tekst lodret */
+    justify-content: center; /* Centrér tekst vandret */
 }
+
+/* Tilføj dette til det aktive faneblad */
+.navigationsbar a.active {
+    background-color: #5b2d82; /* Lysere lilla baggrund for aktivt faneblad */
+    color: white; /* Skift tekstfarve til hvid, når aktiv */
+    border-radius: 5px; /* Valgfrit: Afrundede hjørner for knap-effekt */
+    height: 40px; /* Sørg for, at det aktive link har samme højde */
+    display: flex;
+    align-items: center; /* Centrér tekst lodret */
+    justify-content: center; /* Centrér tekst vandret */
+}
+
 .container { 
     max-width: 600px;
     background: #181a1b;
