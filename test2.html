@@ -1,0 +1,35 @@
+</head>
+<body>
+    <div class="navigationsbar">
+        <ul id="menu">
+            <li><a href="forside.html" class="active">Forside</a></li>
+            <li><a href="bla-bog.html">Blå bog</a></li>
+            <li><a href="billeder.html">Billeder</a></li>
+            <li><a href="vigtigste-sted.html">Vigtigste sted</a></li>
+            <li><a href="nedtaelling.html">Nedtælling</a></li>
+            <li><a href="om.html">Om</a></li>
+        </ul>
+        <!-- Hamburger icon for mobile -->
+        <div class="hamburger" onclick="toggleMenu()">
+            &#9776; <!-- Unicode for the hamburger icon -->
+        </div>
+    </div>
+
+    <div class="content">
+        <h1>Responsive Navbar</h1>
+        <p>This is an example of a responsive navigation bar.</p>
+    </div>
+
+    <script>
+        // JavaScript to toggle menu visibility on mobile
+        function toggleMenu() {
+            var menu = document.getElementById("menu");
+            if (menu.style.display === "block") {
+                menu.style.display = "none";
+            } else {
+                menu.style.display = "block";
+            }
+        }
+    </script>
+</body>
+</html>
