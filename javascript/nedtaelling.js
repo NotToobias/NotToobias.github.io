@@ -1,7 +1,8 @@
 // Dato og tid til events
 const halloween = new Date('Oct 31, 2024 00:00:00').getTime();
-const birthday = new Date('Dec 22, 2024 00:00:00').getTime();
-const christmas = new Date('Dec 24, 2024 00:00:00').getTime();
+const juleferie = new Date('Dec 20, 2024 14:20:00').getTime();
+const birthday = new Date('Dec 22, 2024 02:00:00').getTime();
+const christmas = new Date('Dec 24, 2024 18:00:00').getTime();
 const newYear = new Date('Jan 1, 2025 00:00:00').getTime();
 
 function updateCountdown() {
@@ -9,9 +10,10 @@ function updateCountdown() {
 
     // Tid tilbage til events
     updateEvent(halloween, 'days1', 'hours1', 'minutes1', 'seconds1');
-    updateEvent(birthday, 'days22', 'hours22', 'minutes22', 'seconds22');
-    updateEvent(christmas, 'days2', 'hours2', 'minutes2', 'seconds2');
-    updateEvent(newYear, 'days3', 'hours3', 'minutes3', 'seconds3');
+    updateEvent(juleferie, 'days2', 'hours2', 'minutes2', 'seconds2');
+    updateEvent(birthday, 'days3', 'hours3', 'minutes3', 'seconds3');
+    updateEvent(christmas, 'days4', 'hours4', 'minutes4', 'seconds4');
+    updateEvent(newYear, 'days5', 'hours5', 'minutes5', 'seconds5');
 }
 
 function updateEvent(eventTime, daysId, hoursId, minutesId, secondsId) {
