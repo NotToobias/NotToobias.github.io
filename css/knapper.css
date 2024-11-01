@@ -1,0 +1,93 @@
+h2 {
+    font-size: 24px;
+    color: #c8c3bc;
+    margin-bottom: 20px;
+}
+.container { 
+    max-width: 600px;
+    background: #181a1b;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-bottom: 40px;
+}
+.buttons-section {
+    margin-top: 40px;
+}
+.button {
+    display: block;
+    width: 90%;
+    max-width: 400px;
+    margin: 10px auto;
+    padding: 15px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+}
+.button:hover {
+    background-color: #555;
+}
+.collage-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    grid-gap: 10px; /* space between images */
+    max-width: 800px;
+    margin: 20px;
+}
+.collage-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.3s ease; /* Smooth transition for hover */
+}
+.collage-container img:hover {
+    transform: scale(1.05); /* Slightly enlarge image on hover */
+}
+
+/* Lightbox styles */
+.lightbox {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+}
+
+.lightbox img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+    pointer-events: none;
+}
+
+.lightbox:target {
+    display: flex; /* Show lightbox when active */
+}
+
+.lightbox .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.lightbox .close:hover {
+    color: #f1f1f1;
+}

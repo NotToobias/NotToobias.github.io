@@ -1,0 +1,78 @@
+/* layout.css */
+
+/* Baggrund */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #202223;
+    color: #c8c3bc;
+}
+
+/* Navbar */
+.navigationsbar {
+    width: 100%;
+    background-color: #181a1b;
+    padding: 10px 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.navigationsbar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: inline-flex;
+    gap: 20px;
+}
+
+.navigationsbar li {
+    display: inline;
+}
+
+.navigationsbar a {
+    color: #7a00cc;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    line-height: 1.5;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navigationsbar a.active {
+    background-color: #5b2d82;
+    color: white;
+    border-radius: 5px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Links i bunden */
+.links {
+    width: 100%;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    text-align: right;
+}
+
+.links a {
+    margin-left: 20px;
+    color: #7a00cc;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.links a:hover {
+    text-decoration: underline;
+}

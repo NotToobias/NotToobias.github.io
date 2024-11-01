@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tobias' Website</title>
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/knapper.css">
+    <link rel="stylesheet" href="css/styles.css">
      <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 
 </head>
@@ -14,14 +13,31 @@
     <div class="navigationsbar"> <!--Baren med links i toppen-->
         <ul>
         <li><a href="forside.html">Forside</a></li> <!--Til forsiden-->
-        <li><a href="billeder.html" class="active">Billeder</a></li> <!--Til billeder-->
+        <li><a href="billeder.html">Billeder</a></li> <!--Til billeder-->
         <li><a href="mcd.html">Vigtigeste sted</a></li> <!--Til det vigtigeste sted-->
         <li><a href="nedtaelling.html">Nedtælling</a></li> <!--Til nedtællinger-->
         <li><a href="downloads.html">Downloads</a></li> <!--Til downloads-->
         <li><a href="om.html">Om</a></li> <!--Lidt om mig-->
       </ul>
     </div>
- <h1>Amsterdam kommer snart!</h1>
+    <div class="main-container">
+        <div class="left">
+            <h1>Lav et opslag</h1>
+            <form id="opslagForm">
+                <input type="text" name="navn" placeholder="Dit navn" required><br><br>
+                <textarea name="tekst" placeholder="Din besked" required></textarea><br><br>
+                <input type="file" name="billede" accept="image/*"><br><br>
+                <button type="submit">Opslå</button>
+            </form>
+        </div>
+        <div class="right">
+            <h2>Opslag:</h2>
+            <div id="opslagContainer">
+                <!-- Her vises opslagene senere -->
+            </div>
+        </div>
+    </div>
+    
 
 </body>
 <div class="links"><!--Links i bunden-->

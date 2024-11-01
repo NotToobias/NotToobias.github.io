@@ -215,3 +215,27 @@ h2 {
         grid-template-columns: 1fr; /* 1 column for mobile screens */
     }
 }
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 80%;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+.left {
+    flex: 1;
+    padding: 20px;
+    margin-right: 20px;
+}
+
+.right {
+    flex: 1;
+    padding: 20px;
+    background-color: #181a1b;
+    border: 2px solid #c8c3bc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
